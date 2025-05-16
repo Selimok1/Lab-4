@@ -6,7 +6,6 @@ secret_number = random.randint(1, 100)
 start_time = time.time()
 
 attempts = 0
-
 print(" Я загадал число от 1 до 100. Попробуйте его угадать!")
 
 while True:
@@ -25,7 +24,6 @@ while True:
         print(" Пожалуйста, введите целое число!")
 end_time = time.time()
 elapsed_time = end_time - start_time
-
 print(f" Вы потратили {elapsed_time:.2f} секунд на игру.")
 
 with open("results.txt", "a", encoding="utf-8") as file:
