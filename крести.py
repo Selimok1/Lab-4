@@ -1,4 +1,3 @@
-
 def print_board(board):
     for i in range(3):
         print("|".join(board[i * 3:(i + 1) * 3]))
