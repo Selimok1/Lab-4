@@ -1,0 +1,24 @@
+import find_num
+import blackjack
+import tictactoe
+def main():
+    print("Игры")
+    print('1. Угадай число')
+    print('2. Блэк_Джэк')
+    print('3. Крестики-нолики')
+    print('0. Выход')
+
+    Выбор = input("Выбери игру: ")
+    if Выбор == "1":
+        find_num.играть()
+    elif Выбор == "2":
+        blackjack.играть()
+    elif Выбор == "3":
+        tictactoe.играть()
+    elif Выбор == "0":
+        print("Выход")
+    else:
+        print('Неверный ввод')
+
+if __name__ == "__main__":
+    main()
